@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+
+}
+:root{
+    --bg-color: #351023;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background:  var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a{
+   font-size: 1.7rem;
+   color: var(--text-color);
+   margin-left: 3rem;
+}
+
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+    height: 558px;
+
+}
+
+.home-img img {
+    width: 50vh;
+    border-radius: 50%;
+    margin-left: 90%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+.home-content {
+    margin-right: 20%;
+}
+.home-content h1 {
+    text-align: left;
+    line-height: 1;
+    color: var(--text-color);
+    font-size: 5rem;
+    margin-top: 10%;
+}
+
+.home-content p {
+    font-size: 3rem;
+    margin: 5rem 0 1rem;
+    color: var(--text-color);
+}
+
+.about{
+    margin-top: 2%;
+    /* display: flex; */
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-me {
+    margin-left: 35%;
+    background-color: #351023;
+    width: 200px;
+    height: 70px;
+    padding-top: 15px;
+    border-radius: 50px;
+    color: #fff;
+
+}
+
+.about-content {
+    margin-right: 15%;
+}
+
+.about-content h3 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.about-content p {
+    margin-top: 40px;
+    margin-left: 32%;
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 550;
+}
+
+.skills {
+    /* margin-top: 1%; */
+    font-size: 5rem;
+    font-weight: 600;
+}
+.skills h2 {
+    color: var(--bg-color);
+    margin-bottom: 9rem;
+    font-size: 4.2rem;
+    font-weight: 600;
+
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--text-color);
+    padding: 1rem 0.5rem ;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    box-shadow: 0 .5rem rgba(61, 12, 12, 0.747);
+    height: 260px;
+   
+}
+
+.services-box i {
+    font-size: 5rem;
+    color: var(--bg-color);
+}
+
+.services-box h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.services-box p {
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 540;
+    padding: 10px 8px;
+
+}
+
+.contect{
+    margin-top: 0%;
+    
+}
+
+.contect h1{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--bg-color);
+
+}
+
+.contect form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contect form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.contect form .input-box input,
+.contect form textarea{
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    outline: none;
+    border: none;
+   
+}
+
+.contect form .input-box input{
+    width: 49%;
+    
+}
+
+.input-btn{
+    padding: 1rem 1rem;
+    background-color:  var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 .2rem rgb(161, 159, 159);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.icon {
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.contct{
+    margin-top: 7rem;
+    
+}
+
+.icocon {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: bold;
+}
+
+.fa-solid {
+    font-size: 1.6rem;
+    color: var(--bg-color);
+}
+
+
+/*Responsiv  */
+
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .skills {
+        padding-bottom: 7rem;
+    }
+
+
+
+    .contect {
+        min-height: auto;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 5%;
+        left: 32%;
+        width: 65%;
+        padding: 1rem 2rem;
+        background: rgba(213, 215, 219, 0.411);
+        /* border-top: .1rem solid   var(--bg-color); */
+        box-shadow: 0 .3rem rgba(143, 138, 138, 0.2);
+        display: none;
+        border-radius: 2rem;
+        
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 2.5rem 0;
+        text-align: center;
+        color: var(--bg-color);
+       
+        
+    }
+
+    .home {
+        flex-direction: column;
+    }
+    .home-content p {
+        font-size: 2.4rem;
+        margin-bottom: 20%;
+    }
+    .home-content h1 {
+        font-size: 3rem;
+        margin-top: 4%;
+
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 3.5rem;
+        margin-left: 0;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+
+    }
+
+    .about-me {
+        margin-left:24%
+    }
+
+    .about-content p{
+        margin-left:20%;
+       
+    }
+   
+    .skills h2 {
+        margin-bottom: 3rem;
+    }
+
+    .services-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .contect form .input-box input {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+    
+   
+}
